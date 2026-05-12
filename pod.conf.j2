@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: {{ nom_du_pod }}
+  name: {{ name_pod }}
   labels:
     app: {{ type_app }}
 spec:
   containers:
-  - name: {{ nom_du_conteneur }}
-    image: {{ nom_image }}:{{ version_image }}
+  - name: {{ name_container }}
+    image: {{ name_image }}:{{ version_image }}
     ports:
-    - containerPort: {{ port_interne }}
+    - containerPort: {{ port }}
